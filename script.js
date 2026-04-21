@@ -2,14 +2,17 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const exploreButton = document.getElementById('exploreBtn');
 
-    exploreButton.addEventListener('click', () => {
-        // A thematic alert for the book
-        alert("Listen to me! You got to let me speak! ...Let's analyze Piggy's character.");
-        
-        // Smooth scroll to the info cards
-        document.querySelector('.info-section').scrollIntoView({ 
-            behavior: 'smooth' 
+    if (exploreButton) {
+        exploreButton.addEventListener('click', () => {
+            // Smooth scroll down to the info cards on the homepage
+            const infoSection = document.querySelector('.info-section');
+            if (infoSection) {
+                infoSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                // If the info section isn't there (like on chapter pages), go to chapter 1
+                window.location.href = 'ch1.html';
+            }
         });
-    });
+    }
 
 });

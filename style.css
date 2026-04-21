@@ -6,18 +6,20 @@
 }
 
 body {
-    /* A sandy, parchment-like background for a book report feel */
     background-color: #f7f3e8; 
     color: #2b2b2b;
-    font-family: 'Georgia', serif; /* Serif font looks more literary */
+    font-family: 'Georgia', serif; 
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Navigation Bar */
 header {
-    background-color: #2c3e2e; /* Deep jungle green */
+    background-color: #2c3e2e; /* Deep jungle green - stands out now! */
     padding: 1rem 2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 nav {
@@ -31,14 +33,14 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #eaddcf; /* Sand color */
+    color: #eaddcf; 
     font-family: 'Arial', sans-serif;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 1.2rem;
     font-family: 'Arial', sans-serif;
 }
 
@@ -46,23 +48,24 @@ nav {
     color: #eaddcf;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 0.95rem;
 }
 
 .nav-links a:hover {
-    color: #c9643b; /* Fire orange */
+    color: #c9643b; 
 }
 
-/* Hero Section */
+/* Hero Section (Homepage) */
 .hero {
     text-align: center;
     padding: 6rem 2rem;
-    background-color: #2c3e2e;
-    color: #f7f3e8;
+    background-color: #eaddcf; /* Sand color to separate it from the nav bar */
+    color: #2c3e2e; /* Dark green text */
     border-bottom: 4px solid #c9643b;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: normal;
 }
@@ -75,10 +78,10 @@ nav {
 }
 
 .hero button {
-    margin-top: 2rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    background-color: #c9643b; /* Fire orange */
+    margin-top: 2.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    background-color: #c9643b; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -109,7 +112,7 @@ nav {
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     flex: 1 1 300px;
     text-align: center;
-    border-top: 4px solid #c9643b; /* Accent line at the top */
+    border-top: 4px solid #c9643b; 
 }
 
 .card h2 {
@@ -118,13 +121,52 @@ nav {
     font-weight: normal;
 }
 
+/* Subpage Content Styling (For your chapter pages) */
+.page-content {
+    flex-grow: 1;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.text-box {
+    background-color: white;
+    padding: 3rem;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid #c9643b;
+}
+
+.text-box h1 {
+    color: #2c3e2e;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+.text-box h2 {
+    color: #c9643b;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+.text-box p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 1.5rem;
     background-color: #2c3e2e;
     color: #9ab09c;
-    margin-top: 2rem;
     font-family: 'Arial', sans-serif;
     font-size: 0.9rem;
+    margin-top: auto;
 }
