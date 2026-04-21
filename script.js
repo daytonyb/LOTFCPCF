@@ -1,14 +1,12 @@
-// Wait for the HTML document to fully load before running the script
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Find the button using its ID
     const exploreButton = document.getElementById('exploreBtn');
 
-    // Add a click event listener to the button
     exploreButton.addEventListener('click', () => {
-        alert("Thanks for checking out my project! Scroll down to learn more.");
+        // A thematic alert for the book
+        alert("Listen to me! You got to let me speak! ...Let's analyze Piggy's character.");
         
-        // Bonus: Smooth scroll to the info section
+        // Smooth scroll to the info cards
         document.querySelector('.info-section').scrollIntoView({ 
             behavior: 'smooth' 
         });
